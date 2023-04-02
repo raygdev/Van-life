@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link, useLocation, useLoaderData } from 'react-router-dom'
-import { getVans } from '../../api'
+import { getVans } from '../../../vanApi'
 
-export function loader({params}){
-    return getVans(params.id)
+export async function loader({params}){
+    return await getVans(params.id)
 }
 export default function VanDetail() {
     const location = useLocation()

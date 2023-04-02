@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "proxy": "https://localhost:8080",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,7 +18,8 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
-    "miragejs": "^0.1.47",
+    "https": "^1.0.0",
+    "miragejs": "^0.1.46",
     "vite": "^4.2.0"
   }
 }

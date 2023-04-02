@@ -20,7 +20,7 @@ module.exports = {
       imageUrl:
         "https://assets.scrimba.com/advanced-react/react-router/beach-bum.png",
       type: "rugged",
-      hostId: "123",
+      hostId: "124",
     },
     {
       id: "3",
@@ -53,7 +53,7 @@ module.exports = {
       imageUrl:
         "https://assets.scrimba.com/advanced-react/react-router/the-cruiser.png",
       type: "luxury",
-      hostId: "789",
+      hostId: "790",
     },
     {
       id: "6",
@@ -64,7 +64,7 @@ module.exports = {
       imageUrl:
         "https://assets.scrimba.com/advanced-react/react-router/green-wonder.png",
       type: "rugged",
-      hostId: "123",
+      hostId: "813",
     },
     
   ],

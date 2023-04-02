@@ -3,7 +3,7 @@ import { Link, useSearchParams, useLoaderData } from 'react-router-dom'
 import { getVans } from '../../../vanApi'
 
 export async function loader(){
-   return await getVans()
+   return getVans()
 }
 
 export default function Vans() {

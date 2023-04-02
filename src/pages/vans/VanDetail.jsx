@@ -3,7 +3,7 @@ import { useParams, Link, useLocation, useLoaderData } from 'react-router-dom'
 import { getVans } from '../../../vanApi'
 
 export async function loader({params}){
-    return await getVans(params.id)
+    return getVans(params.id)
 }
 export default function VanDetail() {
     const location = useLocation()

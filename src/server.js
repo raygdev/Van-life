@@ -51,15 +51,15 @@ createServer({
             const foundUser = schema.users.findBy({ email, password })
             if (!foundUser) {
                 console.log("no user found")
-                return new Response(401, {}, { message: "No user with those credentials found!" })
+                return new Response({ message: "No user with those credentials found!" },{status:401})
             }
 
             // At the very least, don't send the password back to the client 😅
             foundUser.password = undefined
-            return {
+            return new Response({
                 user: foundUser,
                 token: "Enjoy your pizza, here's your tokens."
-            }
+            },{status : 200})
         })
     }
 })

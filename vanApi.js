@@ -1,3 +1,4 @@
+
 export async function getVans(id) {
     const url = id ? `/api/vans/${id}` : "/api/vans"
     const res = await fetch(url)
@@ -34,15 +35,14 @@ export async function loginUser(creds) {
         { method: "post", body: JSON.stringify(creds)  }
     )
     const data = await res.json()
-    
-    if (!res.ok) {
-        console.log("not ok", data)
+    if (!data.ok) {
+        console.log("not ok")
         throw {
-            message: data.message,
-            statusText: res.statusText,
-            status: res.status
+            message: data._bodyInit.message,
+            statusText: data.statusText,
+            status: data.status
         }
     }
-
-    return data
+    console.log(data._bodyInit)
+    return data._bodyInit
 }

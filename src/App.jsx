@@ -23,7 +23,7 @@ import Error from "./components/Error"
 import Login, {loader as loginLoader, action as loginAction} from "./pages/Login"
 import { requireAuth } from "../utils"
 
-// import './server'
+import './server'
 
 const router = createBrowserRouter(createRoutesFromElements(
 

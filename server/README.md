@@ -13,7 +13,7 @@ server folder.
 The request is proxied from the *vite.config.js*
 
 ## The code that configures proxy in *vite.config.js*
-```
+```javascript
 export default defineConfig({
   plugins: [react()],
 
